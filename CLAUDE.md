@@ -16,8 +16,11 @@ application with plans to go to production.
 ## Key Files
 
 - `agent.py` — entire application (agents, tools, routing, CLI loop)
-- `requirements.txt` — Python dependencies (unpinned)
-- `RESPONSIBLE_AI.md` — responsible AI implementation plan and status tracker
+- `requirements.txt` — Python dependencies (pinned)
+- `requirements.lock` — full dependency tree lockfile
+- `ARCHITECTURE.md` — roadmap, decisions log, and implementation details
+- `RESPONSIBLE_AI.md` — responsible AI safeguard reference (risks + mitigations)
+- `notes/` — personal study notes (git-ignored)
 
 ## Tech Stack
 
@@ -35,10 +38,11 @@ python agent.py
 
 ## Current State
 
+- Phase 1 complete — all 10 responsible AI safeguards implemented
 - CLI-only (no web server yet)
 - All tool data is mocked (no real APIs connected)
-- No tests, no logging, no error handling
-- Responsible AI safeguards are being implemented (see RESPONSIBLE_AI.md)
+- Structured logging, error handling with retry, PII redaction all in place
+- See ARCHITECTURE.md for full roadmap and status
 
 ## Conventions
 

@@ -9,5 +9,8 @@ __pycache__/
 # Logs — may contain user inputs, session data, PII
 *.log
 
+# Personal notes — interview prep, not for public repo
+notes/
+
 # OS
 .DS_Store
