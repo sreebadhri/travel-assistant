@@ -1,0 +1,13 @@
+# Secrets — NEVER commit API keys or credentials
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Logs — may contain user inputs, session data, PII
+*.log
+
+# OS
+.DS_Store
